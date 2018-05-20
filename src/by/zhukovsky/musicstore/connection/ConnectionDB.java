@@ -17,6 +17,7 @@ public class ConnectionDB {
     private static String pass = resourceBundle.getString("db.password");
 
     public static Connection createConnection() throws SQLException {
+        System.out.println("BlaBlaBla");
         return DriverManager.getConnection(url, user, pass);
     }
 
